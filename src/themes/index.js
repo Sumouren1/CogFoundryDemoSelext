@@ -1,0 +1,96 @@
+// 三套视觉方案的色彩和气质配置
+
+export const themes = {
+  A: {
+    id: 'A',
+    name: 'Siemens Classic',
+    desc: '重工业 · 正统派',
+    // Landing (dark)
+    landing: {
+      petroleum: '#009999',
+      bg: '#0A1214',
+      card: '#111A1D',
+      textPrimary: '#E0E6E8',
+      textSecondary: '#7A8890',
+      border: '#1D2A2E',
+      borderAccent: '#009999',
+    },
+    // Console (light)
+    console: {
+      petroleum: '#009999',
+      bg: '#F4F5F7',
+      card: '#FFFFFF',
+      sidebar: '#FFFFFF',
+      textPrimary: '#1A1D21',
+      textSecondary: '#5A6573',
+      border: '#D9DEE3',
+    },
+    radius: { btn: '2px', card: '2px' },
+    ease: 'cubic-bezier(0.65, 0, 0.35, 1)',
+    durationHover: '320ms',
+    durationClick: '400ms',
+    decorStyle: 'grid', // dotted grid background
+  },
+  B: {
+    id: 'B',
+    name: 'Petroleum Workshop',
+    desc: '现代工坊 · 平衡派',
+    landing: {
+      petroleum: '#00A39A',
+      bg: '#0A0F1A',
+      card: '#0F1624',
+      textPrimary: '#E6EAF2',
+      textSecondary: '#8A94A6',
+      border: '#1C2433',
+      borderAccent: '#00A39A',
+    },
+    console: {
+      petroleum: '#00A39A',
+      bg: '#FAFAFA',
+      card: '#FFFFFF',
+      sidebar: '#FFFFFF',
+      textPrimary: '#0F172A',
+      textSecondary: '#64748B',
+      border: '#E5E7EB',
+    },
+    radius: { btn: '2px', card: '4px' },
+    ease: 'cubic-bezier(0.65, 0, 0.35, 1)',
+    durationHover: '200ms',
+    durationClick: '320ms',
+    decorStyle: 'flow', // animated flow dots on pipeline
+  },
+  C: {
+    id: 'C',
+    name: 'Data Ops',
+    desc: '仪表盘 · 重数据派',
+    landing: {
+      petroleum: '#00B8A3',
+      bg: '#05080F',
+      card: '#0C1119',
+      textPrimary: '#D4DAE4',
+      textSecondary: '#6B7280',
+      border: '#151B26',
+      borderAccent: '#00B8A3',
+      amber: '#D97706',
+      pink: '#BE185D',
+      blue: '#2563EB',
+    },
+    console: {
+      petroleum: '#007F7F',
+      bg: '#FFFFFF',
+      card: '#FAFAFA',
+      sidebar: '#FAFAFA',
+      textPrimary: '#111418',
+      textSecondary: '#4B5563',
+      border: '#E5E7EB',
+      amber: '#D97706',
+      pink: '#BE185D',
+      blue: '#2563EB',
+    },
+    radius: { btn: '2px', card: '2px' },
+    ease: 'cubic-bezier(0.65, 0, 0.35, 1)',
+    durationHover: '200ms',
+    durationClick: '320ms',
+    decorStyle: 'waveform', // background waveform + grid
+  },
+}

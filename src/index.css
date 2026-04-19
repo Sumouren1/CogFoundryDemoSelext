@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Industrial easing */
+.ease-industrial {
+  transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Active press effect */
+.btn-press:active {
+  transform: translateY(1px);
+}
+
+/* Pipeline flow animation */
+@keyframes flowDot {
+  0% { stroke-dashoffset: 100; }
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes pulse-teal {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.03; }
+  50% { opacity: 0.07; }
+}
+
+@keyframes waveform {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes tickFlash {
+  0%, 100% { color: inherit; }
+  50% { color: var(--petroleum); }
+}
+
+.animate-flow-dot {
+  animation: flowDot 2s linear infinite;
+}
+
+.animate-pulse-teal {
+  animation: pulse-teal 2s ease-in-out infinite;
+}
+
+.animate-waveform {
+  animation: waveform 8s linear infinite;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a3340; border-radius: 2px; }
